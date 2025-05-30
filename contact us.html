@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Ficer Web Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+     .navbar {
+  background-color: rgb(58, 56, 56);
+}
+
+/* Links color and hover effect */
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f2f7f6 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav item hover effect */
+.nav-item:hover {
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  transform: scale(1);
+  opacity: 0.90;
+  box-shadow: inset 10px 10px 20px wheat;
+}
+
+/* Button styles */
+.navbar .btn {
+  background-color: rgb(53, 36, 148);
+  color: rgb(252, 251, 251);
+  border: 1px solid #00695c;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Button hover effect */
+.navbar .btn:hover {
+  color: rgb(36, 44, 34);
+  background-color: #f8fcf8;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent logo image hover effect */
+.navbar-brand img:hover {
+  box-shadow: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+    .contact-header {
+      /* background: linear-gradient(to right, #0d6efd, #0a58ca); */
+      background-image: url(header.webp);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+      background-position: center;
+      height: 300px;
+    }
+    .contact-info i {
+      font-size: 1.5rem;
+      color: #4b4c4e;
+      margin-right: 10px;
+    }
+    .form-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #38393a;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+    }
+    footer a:hover {
+  text-decoration: underline;
+  color: #00bcd4 !important;
+  transition: 0.3s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+   <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Ficer Web Development" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Header -->
+  <section class="contact-header">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Contact Us</h1>
+      <p class="lead">We'd love to hear from you! Let's build something amazing together.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="form-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Info -->
+        <div class="col-md-5">
+          <h3 class="mb-4">Get in Touch</h3>
+          <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@ficerwebdev.com">info@ficerwebdev.com</a></p>
+          <p><i class="fas fa-phone"></i> Phone: +92 300 1234567</p>
+          <p><i class="fas fa-map-marker-alt"></i> Location: Lahore, Pakistan</p>
+          <p><i class="fas fa-clock"></i> Business Hours: Mon - Fri (9am - 6pm)</p>
+          <div class="mt-4">
+            <a href="#" class="me-2 text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="me-2 text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="me-2 text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-github fa-lg"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <h3 class="mb-4">Send a Message</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Message subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark px-4">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional Map -->
+  <section>
+    <div class="container mb-5">
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13609.36078976067!2d74.3406843!3d31.5203698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904df41c72f69%3A0xe6b5e5d3091c013b!2sLahore!5e0!3m2!1sen!2s!4v1673119999999!5m2!1sen!2s" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+ <footer class="text-white pt-5 pb-4" style="background-color: #1a1a1a;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- Company Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Ficer Web Development</h5>
+        <p>
+          We create modern, responsive, and impactful websites tailored to your business goals. Let's build something great together!
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+        <p><a href="#home" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="#services" class="text-white text-decoration-none">Services</a></p>
+        <p><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></p>
+        <p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> New Delhi, India</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@ficerweb.com</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +91 9876543210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+        <a href="https://facebook.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="https://twitter.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-twitter fs-5"></i></a>
+        <a href="https://instagram.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="https://linkedin.com/company/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+        <a href="https://github.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-github fs-5"></i></a>
+      </div>
+      
+    <!-- Horizontal Line -->
+    <hr class="mb-4 mt-4 text-white"/>
+
+    <!-- Copyright -->
+    <div class="row align-items-center">
+      <div class="col-md-8 col-lg-8">
+        <p>© 2025 Ficer Web Development. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-4 col-lg-4 text-md-end">
+        <p>Designed by <strong>Ficer</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

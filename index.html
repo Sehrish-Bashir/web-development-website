@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="bootstrap.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+ 
+ 
+  <style>
+   /* Navbar background color */
+.navbar {
+  background-color: rgb(58, 56, 56);
+}
+
+/* Links color and hover effect */
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f2f7f6 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav item hover effect */
+.nav-item:hover {
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  transform: scale(1);
+  opacity: 0.90;
+  box-shadow: inset 10px 10px 20px wheat;
+}
+
+/* Button styles */
+.navbar .btn {
+  background-color: rgb(53, 36, 148);
+  color: rgb(252, 251, 251);
+  border: 1px solid #00695c;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Button hover effect */
+.navbar .btn:hover {
+  color: rgb(36, 44, 34);
+  background-color: #f8fcf8;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent logo image hover effect */
+.navbar-brand img:hover {
+  box-shadow: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+     /* Background image and full-screen height */
+     
+/* Background image and full-screen height */
+.bg-image {
+    background-image: url(header.webp); /* Replace with your image URL */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering content */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevent overflow of content */
+    animation: slider 25s infinite linear;
+}
+
+/* Content styling */
+.content {
+    text-align: left; /* Align text to the left */
+    color: white; /* Set the text color to white */
+    backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+    padding: 20px; /* Adds padding inside the content box */
+    border-radius: 10px; /* Rounded corners for the content box */
+    max-width: 70%; /* Content box width is limited to 50% of the section */
+    margin-left: 50px; /* 50px margin from the left */
+    margin-bottom: 100px; /* 100px margin from the top */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Optional: Adjust content layout on smaller screens */
+@media (max-width: 768px) {
+    .content {
+        max-width: 90%; /* Increase the width on smaller screens */
+    }
+}
+
+/* For the animation */
+.animation {
+    animation: img1 5s infinite; 
+    box-shadow: 3px 5px 90px 20px rgb(76, 106, 187);
+}
+
+@keyframes img1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Ensure responsive behavior for background images and animation */
+@media (max-width: 768px) {
+    .bg-image {
+        background-size: cover; /* Keep image covering on smaller screens */
+        background-position: center; /* Ensure it's still centered */
+    }
+
+    .content {
+        max-width: 90%; /* Adjust content width */
+        margin-left: 20px; /* Reduce margin on small screens */
+        margin-bottom: 50px; /* Adjust bottom margin */
+    }
+}
+
+/* Fixing the animation timing */
+@keyframes slider {
+    0% {
+        background-image: url(imge2.jpg);
+        background-size: cover;
+    }
+    15% {
+        background-image: url(imge3.jpg);
+        background-size: cover;
+    }
+    30% {
+        background-image: url(imge4.jpg);
+        background-size: cover;
+    }
+    45% {
+        background-image: url(imge9.webp);
+        background-size: cover;
+    }
+    60% {
+        background-image: url(img6.jpg);
+        background-size: cover;
+    }
+    75% {
+        background-image: url(imge7.jpg);
+        background-size: cover;
+    }
+    90% {
+        background-image: url(imge8.jpg);
+        background-size: cover;
+    }
+}
+
+
+        /* Optional: Adjust content layout on smaller screens */
+        @media (max-width: 768px) {
+            .content {
+                max-width: 90%; /* Increase the width on smaller screens */
+            }
+        }
+        .display-4:hover{
+          color: wheat;
+
+        }
+        .display-3:hover{
+          text-decoration: underline white;
+          text-shadow: 20px  brown;
+          
+
+        }
+        .nav-item:hover{
+          border-bottom: 3px solid white;
+    border-radius: 5px;
+    transform: scale(1);
+    opacity: 0.90;
+    box-shadow: inset 10px 10px 20px wheat;
+    box-sizing: 30px;
+        }
+         
+
+        /* Optional: Responsive design on smaller screens */         
+        @media (max-width: 768px) {
+            .custom-image {
+                width: 100%; /* Image takes full width on small screens */
+                height: auto; /* Maintain aspect ratio */
+                margin-right: 0; /* Remove the margin on small screens */
+            }
+            .custom-text {
+                margin-top: 20px; /* Add margin on top for mobile devices */
+                text-align: center; /* Center the text */
+            }
+        }
+       
+  .background-attachment {
+    background-image: url(header.webp); /* change to your image path */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+  }
+
+  .card {
+    height: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .background-attachment {
+      background-attachment: scroll; /* fallback for mobile */
+    }
+  }
+ 
+
+  .img-ani{
+    height: 400px;
+    animation: img1 5s  infinite ;
+    box-shadow: 5px 5px 50px black;
+  }
+  @keyframes img1{
+     0%{
+        transform: translateY(0);
+    }
+      50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #00bcd4 !important;
+  transition: 0.3s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Ficer Web Development" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+   <!-- Section with background image -->
+   <section class="bg-image">
+    
+    <!-- Content inside the background section -->
+    <div class="content text-center">
+        <!-- Main heading (H1) -->
+        <h1 class="display-3" style="font-size: 65px; font-weight:bolder;font-family: Arial, Helvetica, sans-serif;">Transform Your Online Ptrsence</h1>
+        <!-- Subheading (H2) -->
+        <h2 class="display-4" style="font-size: 30px;font-weight: bold;">Custom Web Development Solution for Businesses and Organization</h2>
+        <!-- Paragraph text -->
+        <p class="lead">At Ficer Web Development, we specialize in crafting innovative and effective web solution that drive real reasult. Our team of expert developers, designers and strategists work closely with clients understand their unique needs and goals, and exceed expectations. From stunnding and digital marketing strategies, we've got you covered.</p>
+    </div>
+</section>
+<div class="container  mt-5">
+  <div class="row">
+    <div class="col-lg-6" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+      <img src="slider2.jpg" alt="img2" class="img-fluid img-ani">
+    </div>
+    <div class="col-lg-6 ps-5" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+      <h1 class="pt-5">Transforming Ideas Into Digital Reality</h1>
+      <p>In today's fast-paced digital world, your online presence is your first impression. At Ficer, we believe that every idea has the potential to become something extraordinary. We specialize in transforming your vision into a stunning digital experience that not only captivates your audience but also drives results. From sleek, responsive designs to intuitive user interfaces, we combine creativity and cutting-edge technology to craft websites that stand out. Our approach goes beyond just making your website look good—we focus on building experiences that are memorable and impactful. Whether you're a startup or an established brand, we work with you to create 
+        a digital presence that resonates with your audience and helps your business grow. Let's bring your ideas to life in a way that engages, inspires</p>
+    </div>
+  </div>
+</div><br>
+<!-- section 3   -->
+  <div class="m-4">
+    <h3 class="card-title text-center">The Crucial Role of Web Development in the Digital Age
+      Building a Strong</h3><br><br>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col"  data-aos="zoom-in-up">
+    <!-- Card with default left text alignment -->
+    <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+    <div class="card-body">
+    <h5 class="card-title">Building a Strong Online Presence</h5>
+    <p class="card-text">
+      n today's digital world, having a strong online presence is essential for every business.Web development is the key tool that helps establish your brand in the online world. Your website not only represents your
+       business but also serves as the first point of contact for potential customers.
+    </p><br>
+    <a href="#" class="btn btn-primary">Know More</a>
+    </div>
+    </div>
+    </div>
+    <div class="col"  data-aos="zoom-in-up">
+    <!-- Card with center text alignment -->
+    <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+    <div class="card-body">
+    <h5 class="card-title">Enhancing User Experience</h5>
+    <p class="card-text">
+      One of the most important aspects of web development is user experience (UX). If your website is easy to navigate, mobile-friendly, and loads quickly, it provides a positive experience for your v
+      isitors. In today's fast-paced world, a slow or complex website can turn users away, potentially harming your business.
+    </p>
+    <a href="#" class="btn btn-primary">Know more</a>
+    </div>
+    </div>
+    </div>
+    <div class="col"  data-aos="zoom-in-up">
+    <!-- Card with right text alignment -->
+    <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+    <div class="card-body">
+    <h5 class="card-title">Establishing Credibility and Trust
+    </h5>
+    <p class="card-text">
+      A professional, well-developed website enhances your business's credibility. People tend to trust businesses that manage their online presence well. Through web develo
+      pment, you can create a secure, updated, and user-friendly website that builds trust with your customers.
+
+    </p><br>
+    <a href="#" class="btn btn-primary">Know more</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="m-4">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col"  data-aos="zoom-in-up">
+      <!-- Card with default left text alignment -->
+      <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+      <div class="card-body">
+      <h5 class="card-title">Improving SEO and Visibility
+      </h5>
+      <p class="card-text">
+        SEO (Search Engine Optimization) is a crucial part of web development. Good web development practices, such as clean code and mobile optimization, improve your website's SEO ranking. If your website ranks higher in search
+         engine results, it increases your visibility, reaching more people, which directly contributes to sales and growth.
+      </p>
+      <a href="#" class="btn btn-primary">Know More</a>
+      </div>
+      </div>
+      </div>
+      <div class="col"  data-aos="zoom-in-up">
+      <!-- Card with center text alignment -->
+      <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+      <div class="card-body">
+      <h5 class="card-title">Enhancing User Experience</h5>
+      <p class="card-text">
+        One of the most important aspects of web development is user experience (UX). If your website is easy to navigate, mobile-friendly, and loads quickly, it provides a positive experience for your v
+        isitors. In today's fast-paced world, a slow or complex website can turn users away, potentially harming your business.
+      </p><br>
+      <a href="#" class="btn btn-primary">Know more</a>
+      </div>
+      </div>
+      </div>
+      <div class="col"  data-aos="zoom-in-up">
+      <!-- Card with right text alignment -->
+      <div class="card" style="background-color:rgb(58, 56, 56);color: white;border-radius: 20px;">
+      <div class="card-body">
+      <h5 class="card-title">Establishing Credibility and Trust
+      </h5>
+      <p class="card-text">
+        A professional, well-developed website enhances your business's credibility. People tend to trust businesses that manage their online presence well. Through web develo
+        pment, you can create a secure, updated, and user-friendly website that builds trust with your customers.
+  
+      </p><br><br>
+      <a href="#" class="btn btn-primary">Know more</a>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+     <div class="container-fluid my-4">
+  <div class="row background-attachment" style="margin-top: 80px;">
+    
+    <!-- Heading and paragraph in a full-width column -->
+    <div class="col-12 text-center mb-4">
+      <h1 style="color: rgb(173, 114, 5);">Happy Clients, Successful Projects</h1>
+      <p style="color: rgb(240, 232, 232);">
+        Our web development services are dedicated to delivering high-quality solutions that drive success for our clients.
+        Their positive feedback reflects our commitment to excellence and client satisfaction.
+      </p>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+      <div class="card h-100">
+        <img src="client 1.jpg" class="card-img-top" alt="Client 1" style="object-fit: cover; height: 200px;">
+        <div class="card-body">
+          <h5>Flawless Web Design!</h5>
+          <p class="card-text">
+            I'm thrilled with the website this team created for my business. They understood my needs perfectly and delivered a visually stunning and responsive site.
+            My customers now have a seamless experience across all devices!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+      <div class="card h-100">
+        <img src="client7.webp" class="card-img-top" alt="Client 2" style="object-fit: cover; height: 200px;">
+        <div class="card-body">
+          <h5>Great Web Design!</h5>
+          <p class="card-text">
+            The team was not only creative but also highly professional. They completed the project quickly without 
+            compromising quality. I loved how they brought fresh ideas to the table while ensuring my vision was reflected in the design.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+      <div class="card h-100">
+        <img src="client2.jpg" class="card-img-top" alt="Client 3" style="object-fit: cover; height: 200px;">
+        <div class="card-body">
+          <h5>Creative & Fast!</h5>
+          <p class="card-text">
+            The team was not only creative but also very professional. They completed the project quickly without compromising quality.
+            They brought fresh ideas to the table while ensuring my vision was reflected perfectly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+      <div class="card h-100">
+        <img src="client3.jpg" class="card-img-top" alt="Client 4" style="object-fit: cover; height: 200px;">
+        <div class="card-body">
+          <h5>Smooth Experience!</h5>
+          <p class="card-text">
+            I highly recommend this team to anyone looking for top-notch web development services. They truly care about their clients and deliver exceptional results that drive success.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section text-center">
+  <div class="container-fluid">
+   
+
+ <!-- Footer -->
+<footer class="text-white pt-5 pb-4" style="background-color: #1a1a1a;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- Company Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Ficer Web Development</h5>
+        <p>
+          We create modern, responsive, and impactful websites tailored to your business goals. Let's build something great together!
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+        <p><a href="#home" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="#services" class="text-white text-decoration-none">Services</a></p>
+        <p><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></p>
+        <p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+        <p><i class="bi bi-house-door-fill me-2"></i> New Delhi, India</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@ficerweb.com</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +91 9876543210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+        <a href="https://facebook.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="https://twitter.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-twitter fs-5"></i></a>
+        <a href="https://instagram.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="https://linkedin.com/company/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+        <a href="https://github.com/ficerweb" class="text-white me-4" target="_blank"><i class="bi bi-github fs-5"></i></a>
+      </div>
+      
+    <!-- Horizontal Line -->
+    <hr class="mb-4 mt-4 text-white"/>
+
+    <!-- Copyright -->
+    <div class="row align-items-center">
+      <div class="col-md-8 col-lg-8">
+        <p>© 2025 Ficer Web Development. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-4 col-lg-4 text-md-end">
+        <p>Designed by <strong>Ficer</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <!-- Bootstrap JS and dependencies (Popper.js and Bootstrap Bundle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+        
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Web Development</title>
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: rgb(58, 56, 56);
+    }
+
+    /* Links color and hover effect */
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f2f7f6 !important;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Nav item hover effect */
+    .nav-item:hover {
+      border-bottom: 3px solid white;
+      border-radius: 5px;
+      transform: scale(1);
+      opacity: 0.90;
+      box-shadow: inset 10px 10px 20px wheat;
+    }
+
+    /* Button styles */
+    .navbar .btn {
+      background-color: rgb(53, 36, 148);
+      color: rgb(252, 251, 251);
+      border: 1px solid #00695c;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    /* Button hover effect */
+    .navbar .btn:hover {
+      color: rgb(36, 44, 34);
+      background-color: #f8fcf8;
+    }
+
+    /* Logo styling */
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+      border-radius: 50%;
+      transition: none !important;
+      box-shadow: none !important;
+    }
+
+    /* Prevent logo image hover effect */
+    .navbar-brand img:hover {
+      box-shadow: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+
+    .hero {
+      background: url('header.webp') center center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* section 3 */
+    .services-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('services-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .service-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #3a38a8;
+    }
+
+    .web-dev {
+      background-color: #f8f9fa;
+    }
+
+    .ecommerce {
+      background-color: #e9f7fe;
+    }
+
+    .seo {
+      background-color: #fff8e1;
+    }
+
+    .mobile-dev {
+      background-color: #f3e5f5;
+    }
+
+    .ui-ux {
+      background-color: #e8f5e9;
+    }
+
+    .maintenance {
+      background-color: #fff3e0;
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+      height: 100%;
+    }
+
+    .process-icon {
+      font-size: 2.5rem;
+      color: #3a38a8;
+      margin-bottom: 15px;
+    }
+
+    .tech-stack {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .tech-logo {
+      height: 60px;
+      margin: 20px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .tech-logo:hover {
+      filter: grayscale(0%);
+    }
+
+    .cta-section {
+      background-color: #3a38a8;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    footer {
+      background: rgb(58, 56, 56);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Ficer Web Development" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a href="contact us.html" class="btn btn-primary">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Our Web Development Services</h1>
+    <p>Delivering High-Quality, Custom Digital Solutions</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="container my-5">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="row g-4 mt-3">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+          <h4>Custom Website Development</h4>
+          <p>Tailored websites built from scratch to reflect your brand and meet your goals.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-mobile-alt fa-3x mb-3 text-success"></i>
+          <h4>Responsive Design</h4>
+          <p>Mobile-friendly, fast, and optimized layouts for all screen sizes and devices.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-shopping-cart fa-3x mb-3 text-danger"></i>
+          <h4>E-Commerce Solutions</h4>
+          <p>Fully functional online stores with secure payment integrations and user management.</p>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-search-dollar fa-3x mb-3 text-warning"></i>
+          <h4>SEO Optimization</h4>
+          <p>Improve your website's visibility on search engines and attract more traffic.</p>
+        </div>
+      </div>
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-cloud-upload-alt fa-3x mb-3 text-info"></i>
+          <h4>Website Hosting & Maintenance</h4>
+          <p>Reliable hosting with ongoing support to keep your site updated and secure.</p>
+        </div>
+      </div>
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <i class="fas fa-database fa-3x mb-3 text-dark"></i>
+          <h4>Web App Development</h4>
+          <p>Build powerful web applications for custom workflows and automation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Services Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Custom Web Solutions for Your Business</h2>
+        <p class="lead">We offer end-to-end web development services tailored to your specific needs</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card web-dev">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="h4">Custom Web Development</h3>
+              <p>Bespoke website development from scratch tailored to your business requirements. We build responsive,
+                scalable, and secure websites that deliver exceptional user experiences.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Custom CMS Development</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> API Integrations</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Database Design</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Progressive Web Apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card ecommerce">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3 class="h4">E-Commerce Solutions</h3>
+              <p>Powerful online stores that convert visitors into customers. We create seamless shopping experiences
+                with secure payment gateways and inventory management.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> WooCommerce/Shopify</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Payment Gateway Integration</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Product Management</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Order Tracking System</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card seo">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <h3 class="h4">SEO & Digital Marketing</h3>
+              <p>Increase your online visibility and attract more customers with our comprehensive SEO and digital
+                marketing strategies tailored to your business goals.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Keyword Research</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> On-Page Optimization</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Content Marketing</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Analytics & Reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card mobile-dev">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="h4">Mobile App Development</h3>
+              <p>Native and cross-platform mobile applications that engage users and drive business growth. We build for
+                both iOS and Android platforms.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> iOS & Android Apps</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> React Native Development</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> App UI/UX Design</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> App Store Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card ui-ux">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3 class="h4">UI/UX Design</h3>
+              <p>Beautiful, intuitive interfaces that enhance user engagement and satisfaction. We combine aesthetics
+                with functionality for optimal results.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Wireframing & Prototyping</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> User Research</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Interaction Design</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Usability Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card maintenance">
+            <div class="card-body p-4">
+              <div class="service-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="h4">Website Maintenance</h3>
+              <p>Ongoing support and updates to keep your website secure, fast, and up-to-date with the latest
+                technologies and trends.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Regular Updates</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Security Monitoring</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Performance Optimization</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Backup Solutions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="text-white pt-5 pb-4" style="background-color: #1a1a1a;">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+
+        <!-- Company Info -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Ficer Web Development</h5>
+          <p>
+            We create modern, responsive, and impactful websites tailored to your business goals. Let's build something
+            great together!
+          </p>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+          <p><a href="#home" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#services" class="text-white text-decoration-none">Services</a></p>
+          <p><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></p>
+          <p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+          <p><i class="bi bi-house-door-fill me-2"></i> New Delhi, India</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> info@ficerweb.com</p>
+          <p><i class="bi bi-phone-fill me-2"></i> +91 9876543210</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+          <a href="https://facebook.com/ficerweb" class="text-white me-4" target="_blank"><i
+              class="bi bi-facebook fs-5"></i></a>
+          <a href="https://twitter.com/ficerweb" class="text-white me-4" target="_blank"><i
+              class="bi bi-twitter fs-5"></i></a>
+          <a href="https://instagram.com/ficerweb" class="text-white me-4" target="_blank"><i
+              class="bi bi-instagram fs-5"></i></a>
+          <a href="https://linkedin.com/company/ficerweb" class="text-white me-4" target="_blank"><i
+              class="bi bi-linkedin fs-5"></i></a>
+          <a href="https://github.com/ficerweb" class="text-white me-4" target="_blank"><i
+              class="bi bi-github fs-5"></i></a>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="mb-4 mt-4 text-white" />
+
+        <!-- Copyright -->
+        <div class="row align-items-center">
+          <div class="col-md-8 col-lg-8">
+            <p>© 2025 Ficer Web Development. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-4 col-lg-4 text-md-end">
+            <p>Designed by <strong>Ficer</strong></p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
